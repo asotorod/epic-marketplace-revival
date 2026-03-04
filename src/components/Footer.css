@@ -1,7 +1,7 @@
 .footer {
-  background: #060606;
+  background: var(--footer-bg);
   padding: 4rem 0 0;
-  color: rgba(255, 255, 255, 0.35);
+  color: var(--footer-link);
 }
 
 .footer-grid {
@@ -21,7 +21,7 @@
 .footer-brand p {
   font-size: 0.85rem;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--footer-text);
   margin-bottom: 1.25rem;
 }
 
@@ -34,12 +34,12 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--social-border);
   background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--footer-link);
   transition: border-color var(--transition-luxury), color var(--transition-luxury);
 }
 
@@ -66,7 +66,7 @@
 
 .footer-col a {
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.35);
+  color: var(--footer-link);
   transition: color var(--transition-luxury);
 }
 
@@ -75,7 +75,7 @@
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  border-top: 1px solid var(--footer-divider);
   padding: 1.5rem 0;
   display: flex;
   justify-content: space-between;
@@ -86,7 +86,7 @@
 
 .footer-bottom p {
   font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.15);
+  color: var(--footer-text);
 }
 
 .footer-bottom-links {
@@ -97,7 +97,7 @@
 
 .footer-bottom-links a {
   font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.15);
+  color: var(--footer-text);
   transition: color var(--transition-luxury);
 }
 
@@ -107,7 +107,7 @@
 
 .footer-credit {
   font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.15);
+  color: var(--footer-text);
 }
 
 .footer-credit a:hover {

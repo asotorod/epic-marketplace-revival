@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(135deg, #0B0B0B 0%, #1C1917 40%, #2A2520 100%);
+  background: var(--hero-gradient);
   min-height: calc(100vh - var(--nav-height) - var(--utility-height));
   display: flex;
   align-items: center;
@@ -15,7 +15,7 @@
   right: -10%;
   width: 60%;
   height: 160%;
-  background: radial-gradient(ellipse at 70% 30%, rgba(200, 162, 77, 0.06) 0%, transparent 60%);
+  background: var(--hero-glow);
   pointer-events: none;
 }
 
@@ -38,8 +38,8 @@
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--accent);
-  background: rgba(200, 162, 77, 0.08);
-  border: 1px solid rgba(200, 162, 77, 0.15);
+  background: var(--glass-border);
+  border: 1px solid var(--input-border);
   padding: 0.45rem 1.25rem;
   border-radius: 5px;
   margin-bottom: 1.5rem;
@@ -60,7 +60,7 @@
   font-size: 1.05rem;
   font-weight: 300;
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.50);
+  color: var(--quote-text);
   margin-bottom: 2.25rem;
   max-width: 540px;
 }
@@ -89,7 +89,7 @@
   left: 16px;
   right: -16px;
   bottom: -16px;
-  border: 2px solid rgba(200, 162, 77, 0.15);
+  border: 2px solid var(--input-border);
   border-radius: 5px;
   pointer-events: none;
 }

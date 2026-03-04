@@ -92,7 +92,7 @@ export default function Endorsements() {
           transition={{ duration: 0.6 }}
         >
           <p className="eyebrow">Testimonials</p>
-          <h2 className="section-heading" style={{ color: '#FFFFFF' }}>
+          <h2 className="section-heading" style={{ color: 'var(--off-white)' }}>
             Endorsed by Trusted Leaders
           </h2>
         </motion.div>

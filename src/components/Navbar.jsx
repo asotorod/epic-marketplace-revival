@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import ThemeSwitcher from './ThemeSwitcher';
 import './Navbar.css';
 
 const LOGO_URL = 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/TXijyQGsxjVxhnsglC6X/media/698f63fb24813cdd1e526d39.png';
@@ -56,6 +57,8 @@ export default function Navbar() {
             ))}
           </ul>
 
+          <ThemeSwitcher />
+
           <a href="https://a.co/d/0hYuihgv" target="_blank" rel="noopener noreferrer" className="btn-gold navbar-cta">
             Get the Book
           </a>
@@ -87,6 +90,7 @@ export default function Navbar() {
               exit={{ x: '100%' }}
               transition={{ type: 'tween', duration: 0.35 }}
             >
+              <ThemeSwitcher mobile />
               <ul>
                 {navLinks.map(link => (
                   <li key={link.href}>

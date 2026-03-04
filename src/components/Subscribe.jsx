@@ -25,7 +25,7 @@ export default function Subscribe() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-heading" style={{ color: '#FFFFFF' }}>
+          <h2 className="section-heading" style={{ color: 'var(--off-white)' }}>
             Get the{' '}
             <span style={{ color: 'var(--accent)' }}>Free First Chapter</span>
           </h2>

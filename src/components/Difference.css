@@ -27,7 +27,7 @@
   height: 80px;
   border-radius: 50%;
   background: var(--accent-muted);
-  border: 2px solid rgba(200, 162, 77, 0.2);
+  border: 2px solid var(--card-hover-border);
   display: flex;
   align-items: center;
   justify-content: center;

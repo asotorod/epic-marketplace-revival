@@ -15,8 +15,8 @@
 }
 
 .endorsement-card {
-  background: rgba(255, 255, 255, 0.025);
-  border: 1px solid rgba(200, 162, 77, 0.07);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 6px;
   padding: 2rem;
   position: relative;
@@ -26,8 +26,8 @@
 }
 
 .endorsement-card:hover {
-  border-color: rgba(200, 162, 77, 0.2);
-  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--card-hover-border);
+  background: var(--card-hover-bg);
   transform: translateY(-3px);
 }
 
@@ -35,7 +35,7 @@
   font-family: var(--font-heading);
   font-size: 4rem;
   line-height: 1;
-  color: rgba(200, 162, 77, 0.1);
+  color: var(--quote-mark);
   position: absolute;
   top: 1rem;
   left: 1.5rem;
@@ -46,7 +46,7 @@
   font-style: italic;
   font-size: 0.88rem;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--quote-text);
   margin-top: 1.5rem;
   display: -webkit-box;
   -webkit-line-clamp: 4;
@@ -79,7 +79,7 @@
 .endorsement-author {
   margin-top: 1.25rem;
   padding-top: 1rem;
-  border-top: 1px solid rgba(200, 162, 77, 0.07);
+  border-top: 1px solid var(--card-border);
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
@@ -93,7 +93,7 @@
 
 .endorsement-role {
   font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--role-text);
 }
 
 @media (max-width: 900px) {

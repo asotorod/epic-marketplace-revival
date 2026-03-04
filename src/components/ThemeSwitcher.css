@@ -1,0 +1,71 @@
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 1rem;
+  position: relative;
+}
+
+.theme-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0;
+}
+
+.theme-dot:hover {
+  transform: scale(1.1);
+}
+
+.theme-dot.active {
+  border-color: var(--accent);
+  transform: scale(1.15);
+  box-shadow: 0 0 12px var(--card-hover-border);
+}
+
+.theme-dot-tooltip {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.theme-dot:hover .theme-dot-tooltip {
+  opacity: 1;
+}
+
+/* Mobile theme chooser */
+.mobile-theme-chooser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mobile-theme-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  opacity: 0.4;
+}
+
+.mobile-theme-dots {
+  display: flex;
+  gap: 10px;
+}

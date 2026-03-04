@@ -22,7 +22,7 @@
   left: 12px;
   right: -12px;
   bottom: -12px;
-  border: 2px solid rgba(200, 162, 77, 0.12);
+  border: 2px solid var(--input-border);
   border-radius: 5px;
   pointer-events: none;
 }

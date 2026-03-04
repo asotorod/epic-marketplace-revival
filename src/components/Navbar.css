@@ -4,7 +4,7 @@
   height: var(--utility-height);
   display: flex;
   align-items: center;
-  border-bottom: 1px solid rgba(200, 162, 77, 0.06);
+  border-bottom: 1px solid var(--glass-border);
 }
 
 .utility-inner {
@@ -18,7 +18,7 @@
   font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.35);
+  color: var(--utility-link);
   transition: color var(--transition-luxury);
 }
 
@@ -68,7 +68,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--nav-link);
   position: relative;
   padding: 0.25rem 0;
 }
@@ -106,7 +106,7 @@
 
 .navbar-hamburger {
   display: none;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--nav-link);
 }
 
 /* Mobile Overlay */
@@ -114,7 +114,7 @@
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: rgba(11, 11, 11, 0.98);
+  background: var(--glass);
 }
 
 .mobile-menu {
@@ -143,9 +143,9 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--nav-link);
   padding: 0.9rem 0;
-  border-bottom: 1px solid rgba(200, 162, 77, 0.07);
+  border-bottom: 1px solid var(--card-border);
   transition: color var(--transition-luxury);
 }
 
@@ -161,7 +161,8 @@
 
 @media (max-width: 900px) {
   .navbar-links,
-  .navbar-cta {
+  .navbar-cta,
+  .theme-switcher {
     display: none;
   }
 

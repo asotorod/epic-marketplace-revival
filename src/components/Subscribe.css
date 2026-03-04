@@ -13,7 +13,7 @@
 }
 
 .subscribe-text p {
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--footer-link);
   font-size: 0.92rem;
   line-height: 1.8;
   margin-top: 0.75rem;
@@ -28,8 +28,8 @@
 .subscribe-form input {
   padding: 0.9rem 1.25rem;
   border-radius: 5px;
-  border: 1px solid rgba(200, 162, 77, 0.12);
-  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--input-border);
+  background: var(--input-bg);
   color: var(--off-white);
   font-size: 0.9rem;
   font-weight: 300;
@@ -37,7 +37,7 @@
 }
 
 .subscribe-form input::placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--role-text);
 }
 
 .subscribe-form input:focus {
@@ -53,7 +53,7 @@
 
 .subscribe-privacy {
   font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.2);
+  color: var(--role-text);
   text-align: center;
   margin-top: 0;
 }
@@ -71,7 +71,7 @@
 }
 
 .subscribe-success p {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--quote-text);
   font-size: 0.92rem;
 }
 
