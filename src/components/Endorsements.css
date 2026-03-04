@@ -1,6 +1,6 @@
 .endorsements {
   padding: 6rem 0;
-  background: var(--navy);
+  background: var(--primary-dark);
 }
 
 .endorsements-header {
@@ -15,20 +15,27 @@
 }
 
 .endorsement-card {
-  background: var(--navy-mid);
-  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(200, 162, 77, 0.07);
+  border-radius: 6px;
   padding: 2rem;
   position: relative;
   display: flex;
   flex-direction: column;
+  transition: border-color var(--transition-luxury), background var(--transition-luxury), transform var(--transition-luxury);
+}
+
+.endorsement-card:hover {
+  border-color: rgba(200, 162, 77, 0.2);
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateY(-3px);
 }
 
 .endorsement-quote-mark {
   font-family: var(--font-heading);
   font-size: 4rem;
   line-height: 1;
-  color: var(--gold);
-  opacity: 0.15;
+  color: rgba(200, 162, 77, 0.1);
   position: absolute;
   top: 1rem;
   left: 1.5rem;
@@ -39,7 +46,7 @@
   font-style: italic;
   font-size: 0.88rem;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.6);
   margin-top: 1.5rem;
   display: -webkit-box;
   -webkit-line-clamp: 4;
@@ -56,23 +63,23 @@
 .endorsement-toggle {
   font-size: 0.75rem;
   font-weight: 600;
-  color: var(--gold);
+  color: var(--accent);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   margin-top: 0.75rem;
   padding: 0;
   text-align: left;
-  transition: color 0.3s ease;
+  transition: color var(--transition-luxury);
 }
 
 .endorsement-toggle:hover {
-  color: var(--gold-light);
+  color: var(--accent-light);
 }
 
 .endorsement-author {
   margin-top: 1.25rem;
   padding-top: 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(200, 162, 77, 0.07);
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
@@ -81,12 +88,12 @@
 .endorsement-name {
   font-weight: 700;
   font-size: 0.9rem;
-  color: var(--gold);
+  color: var(--accent);
 }
 
 .endorsement-role {
   font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 @media (max-width: 900px) {

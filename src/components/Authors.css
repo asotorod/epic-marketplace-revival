@@ -1,6 +1,6 @@
 .authors {
   padding: 6rem 0;
-  background: var(--white);
+  background: var(--off-white);
 }
 
 .authors-inner {
@@ -22,17 +22,25 @@
   left: 12px;
   right: -12px;
   bottom: -12px;
-  border: 2px solid rgba(201, 165, 78, 0.25);
-  border-radius: 10px;
+  border: 2px solid rgba(200, 162, 77, 0.12);
+  border-radius: 5px;
   pointer-events: none;
 }
 
 .authors-photo-frame img {
   width: 380px;
-  border-radius: 8px;
+  border-radius: 5px;
   position: relative;
   z-index: 1;
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.10);
+}
+
+.authors-text .eyebrow {
+  color: var(--accent-dark);
+}
+
+.authors-text h2 {
+  color: var(--primary-dark);
 }
 
 .authors-text p {

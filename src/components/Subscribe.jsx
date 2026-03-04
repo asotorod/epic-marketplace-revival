@@ -25,9 +25,9 @@ export default function Subscribe() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-heading" style={{ color: 'var(--white)' }}>
+          <h2 className="section-heading" style={{ color: '#FFFFFF' }}>
             Get the{' '}
-            <span style={{ color: 'var(--gold)' }}>Free First Chapter</span>
+            <span style={{ color: 'var(--accent)' }}>Free First Chapter</span>
           </h2>
           <p>
             Discover the vision behind Epic Marketplace Revival before you commit.

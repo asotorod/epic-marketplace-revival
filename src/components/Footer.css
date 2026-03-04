@@ -1,7 +1,7 @@
 .footer {
-  background: var(--navy-deep);
+  background: #060606;
   padding: 4rem 0 0;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.35);
 }
 
 .footer-grid {
@@ -15,12 +15,13 @@
   height: 40px;
   width: auto;
   margin-bottom: 1rem;
+  filter: brightness(1.15);
 }
 
 .footer-brand p {
   font-size: 0.85rem;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.3);
   margin-bottom: 1.25rem;
 }
 
@@ -33,26 +34,27 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 0.6);
-  transition: background 0.3s ease, color 0.3s ease;
+  color: rgba(255, 255, 255, 0.4);
+  transition: border-color var(--transition-luxury), color var(--transition-luxury);
 }
 
 .footer-social a:hover {
-  background: var(--gold);
-  color: var(--white);
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .footer-col h4 {
   font-family: var(--font-body);
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--white);
+  letter-spacing: 0.15em;
+  color: var(--accent);
   margin-bottom: 1.25rem;
 }
 
@@ -64,16 +66,16 @@
 
 .footer-col a {
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.5);
-  transition: color 0.3s ease;
+  color: rgba(255, 255, 255, 0.35);
+  transition: color var(--transition-luxury);
 }
 
 .footer-col a:hover {
-  color: var(--gold);
+  color: var(--accent-light);
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
   padding: 1.5rem 0;
   display: flex;
   justify-content: space-between;
@@ -84,7 +86,7 @@
 
 .footer-bottom p {
   font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.15);
 }
 
 .footer-bottom-links {
@@ -95,17 +97,21 @@
 
 .footer-bottom-links a {
   font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.35);
-  transition: color 0.3s ease;
+  color: rgba(255, 255, 255, 0.15);
+  transition: color var(--transition-luxury);
 }
 
 .footer-bottom-links a:hover {
-  color: var(--gold);
+  color: var(--accent-light);
 }
 
 .footer-credit {
   font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.footer-credit a:hover {
+  color: var(--accent-light);
 }
 
 @media (max-width: 900px) {

@@ -1,11 +1,15 @@
 .difference {
   padding: 6rem 0;
-  background: var(--white);
+  background: var(--off-white);
 }
 
 .difference-header {
   text-align: center;
   margin-bottom: 3.5rem;
+}
+
+.difference-header h2 {
+  color: var(--primary-dark);
 }
 
 .difference-grid {
@@ -22,18 +26,24 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: rgba(201, 165, 78, 0.1);
-  border: 2px solid rgba(201, 165, 78, 0.25);
+  background: var(--accent-muted);
+  border: 2px solid rgba(200, 162, 77, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 1.25rem;
   font-size: 1.75rem;
+  transition: border-color var(--transition-luxury);
+}
+
+.difference-card:hover .difference-icon {
+  border-color: var(--accent);
 }
 
 .difference-card h3 {
   font-family: var(--font-heading);
   font-size: 1.05rem;
+  color: var(--primary-dark);
   margin-bottom: 0.75rem;
 }
 

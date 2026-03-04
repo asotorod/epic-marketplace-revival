@@ -1,6 +1,6 @@
 .get-involved {
   padding: 6rem 0;
-  background: var(--warm-gray);
+  background: var(--warm-white);
 }
 
 .get-involved-header {
@@ -15,19 +15,21 @@
 }
 
 .involved-card {
-  background: var(--white);
-  border-radius: 12px;
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: 6px;
   padding: 2rem;
   border-bottom: 3px solid transparent;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: border-color var(--transition-luxury), box-shadow var(--transition-luxury), transform var(--transition-luxury);
   display: flex;
   flex-direction: column;
   cursor: pointer;
 }
 
 .involved-card:hover {
-  border-bottom-color: var(--gold);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  border-bottom-color: var(--accent);
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.06);
+  transform: translateY(-3px);
 }
 
 .involved-emoji {
@@ -38,6 +40,7 @@
 .involved-card h3 {
   font-family: var(--font-heading);
   font-size: 1rem;
+  color: var(--primary-dark);
   margin-bottom: 0.65rem;
 }
 
@@ -54,13 +57,16 @@
   gap: 0.4rem;
   font-size: 0.78rem;
   font-weight: 600;
-  color: var(--gold);
+  color: var(--accent-dark);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
   margin-top: 1rem;
-  transition: gap 0.3s ease;
+  transition: gap var(--transition-luxury), color var(--transition-luxury);
 }
 
 .involved-card:hover .involved-link {
   gap: 0.75rem;
+  color: var(--primary-dark);
 }
 
 @media (max-width: 900px) {
