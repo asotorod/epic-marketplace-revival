@@ -1,6 +1,6 @@
 .subscribe {
   padding: 6rem 0;
-  background: var(--primary-dark);
+  background: var(--subscribe-bg);
   border-top: 3px solid var(--accent);
   position: relative;
 }
@@ -13,7 +13,7 @@
 }
 
 .subscribe-text p {
-  color: var(--footer-link);
+  color: var(--subscribe-text);
   font-size: 0.92rem;
   line-height: 1.8;
   margin-top: 0.75rem;
@@ -53,7 +53,7 @@
 
 .subscribe-privacy {
   font-size: 0.75rem;
-  color: var(--role-text);
+  color: var(--subscribe-note);
   text-align: center;
   margin-top: 0;
 }

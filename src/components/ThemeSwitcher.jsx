@@ -8,7 +8,10 @@ export default function ThemeSwitcher({ mobile = false }) {
     <button
       key={key}
       className={`theme-dot${themeName === key ? ' active' : ''}`}
-      style={{ background: theme.swatch }}
+      style={{
+        background: theme.swatch,
+        ...(theme.swatchBorder && themeName !== key && { borderColor: theme.swatchBorder }),
+      }}
       onClick={() => setTheme(key)}
       aria-label={`Switch to ${theme.name} theme`}
     >

@@ -1,6 +1,6 @@
 .endorsements {
   padding: 6rem 0;
-  background: var(--primary-dark);
+  background: var(--endorsements-bg);
 }
 
 .endorsements-header {
@@ -15,8 +15,8 @@
 }
 
 .endorsement-card {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
+  background: var(--endorse-card-bg);
+  border: 1px solid var(--endorse-card-border);
   border-radius: 6px;
   padding: 2rem;
   position: relative;
@@ -79,7 +79,7 @@
 .endorsement-author {
   margin-top: 1.25rem;
   padding-top: 1rem;
-  border-top: 1px solid var(--card-border);
+  border-top: 1px solid var(--endorse-card-border);
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
@@ -88,7 +88,7 @@
 .endorsement-name {
   font-weight: 700;
   font-size: 0.9rem;
-  color: var(--accent);
+  color: var(--endorse-name);
 }
 
 .endorsement-role {

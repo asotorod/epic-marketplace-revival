@@ -27,7 +27,7 @@
 }
 
 .hero-text {
-  color: var(--off-white);
+  color: var(--hero-h1);
 }
 
 .hero-badge {
@@ -38,8 +38,8 @@
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--accent);
-  background: var(--glass-border);
-  border: 1px solid var(--input-border);
+  background: var(--hero-eyebrow-bg);
+  border: 1px solid var(--hero-eyebrow-border);
   padding: 0.45rem 1.25rem;
   border-radius: 5px;
   margin-bottom: 1.5rem;
@@ -47,7 +47,7 @@
 
 .hero h1 {
   font-size: clamp(2.4rem, 4.5vw, 3.6rem);
-  color: #FFFFFF;
+  color: var(--hero-h1);
   margin-bottom: 1.25rem;
   line-height: 1.15;
 }
@@ -60,7 +60,7 @@
   font-size: 1.05rem;
   font-weight: 300;
   line-height: 1.8;
-  color: var(--quote-text);
+  color: var(--hero-sub);
   margin-bottom: 2.25rem;
   max-width: 540px;
 }
@@ -100,7 +100,7 @@
   border-radius: 5px;
   position: relative;
   z-index: 1;
-  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--book-shadow);
 }
 
 @media (max-width: 900px) {

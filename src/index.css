@@ -40,6 +40,27 @@
   --social-border: rgba(255,255,255,0.08);
   --role-text: rgba(255,255,255,0.3);
 
+  --hero-h1: #FFFFFF;
+  --hero-sub: rgba(255,255,255,0.50);
+  --hero-eyebrow-bg: rgba(200, 162, 77, 0.08);
+  --hero-eyebrow-border: rgba(200, 162, 77, 0.15);
+  --dark-section-heading: #FFFFFF;
+  --dark-section-subtext: rgba(255,255,255,0.45);
+  --endorse-card-bg: rgba(255,255,255,0.025);
+  --endorse-card-border: rgba(200, 162, 77, 0.07);
+  --endorse-name: #C8A24D;
+  --subscribe-bg: #0B0B0B;
+  --subscribe-heading: #FFFFFF;
+  --subscribe-text: rgba(255,255,255,0.4);
+  --subscribe-note: rgba(255,255,255,0.2);
+  --nav-bg: #1C1917;
+  --nav-shadow: 0 2px 20px rgba(0,0,0,0.2);
+  --utility-bg: #0B0B0B;
+  --mobile-bg: #1C1917;
+  --mobile-link: rgba(255,255,255,0.8);
+  --endorsements-bg: #0B0B0B;
+  --book-shadow: 0 40px 80px rgba(0,0,0,0.5);
+
   --font-heading: 'Libre Baskerville', Georgia, serif;
   --font-body: 'Source Sans 3', sans-serif;
 
@@ -167,7 +188,7 @@ ul {
   gap: 0.5rem;
   padding: 0.85rem 2rem;
   background: transparent;
-  color: var(--off-white);
+  color: var(--hero-h1);
   font-weight: 600;
   font-size: 0.88rem;
   letter-spacing: 0.03em;

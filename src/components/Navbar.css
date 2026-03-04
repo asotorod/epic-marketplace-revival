@@ -1,6 +1,6 @@
 /* Utility Bar */
 .utility-bar {
-  background: var(--primary-dark);
+  background: var(--utility-bg);
   height: var(--utility-height);
   display: flex;
   align-items: center;
@@ -31,8 +31,9 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: var(--primary-mid);
+  background: var(--nav-bg);
   height: var(--nav-height);
+  box-shadow: var(--nav-shadow);
   display: flex;
   align-items: center;
   transition: background var(--transition-luxury), backdrop-filter var(--transition-luxury);
@@ -124,7 +125,7 @@
   width: 80%;
   max-width: 360px;
   height: 100%;
-  background: var(--primary-mid);
+  background: var(--mobile-bg);
   padding: 6rem 2rem 2rem;
   display: flex;
   flex-direction: column;
@@ -143,7 +144,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: var(--nav-link);
+  color: var(--mobile-link);
   padding: 0.9rem 0;
   border-bottom: 1px solid var(--card-border);
   transition: color var(--transition-luxury);
