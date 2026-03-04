@@ -1,0 +1,102 @@
+.endorsements {
+  padding: 6rem 0;
+  background: var(--navy);
+}
+
+.endorsements-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.endorsements-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.endorsement-card {
+  background: var(--navy-mid);
+  border-radius: 12px;
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.endorsement-quote-mark {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--gold);
+  opacity: 0.15;
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+}
+
+.endorsement-text {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
+
+.endorsement-text--expanded {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+.endorsement-toggle {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 0.75rem;
+  padding: 0;
+  text-align: left;
+  transition: color 0.3s ease;
+}
+
+.endorsement-toggle:hover {
+  color: var(--gold-light);
+}
+
+.endorsement-author {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.endorsement-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--gold);
+}
+
+.endorsement-role {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+@media (max-width: 900px) {
+  .endorsements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .endorsements-grid {
+    grid-template-columns: 1fr;
+  }
+}

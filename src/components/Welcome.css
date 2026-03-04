@@ -1,0 +1,28 @@
+.welcome {
+  padding: 6rem 0;
+  background: var(--white);
+}
+
+.welcome-content {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.welcome-icon {
+  color: var(--gold);
+  opacity: 0.18;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-content h2 {
+  margin-bottom: 1.5rem;
+}
+
+.welcome-content p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.85;
+}
